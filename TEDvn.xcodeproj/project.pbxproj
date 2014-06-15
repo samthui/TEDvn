@@ -1,0 +1,827 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		048F71EB18F1332400AF2889 /* RequestPlaylistVideos.m in Sources */ = {isa = PBXBuildFile; fileRef = 048F71EA18F1332400AF2889 /* RequestPlaylistVideos.m */; };
+		048F71EF18F1491F00AF2889 /* VideoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048F71ED18F1491F00AF2889 /* VideoDetailViewController.m */; };
+		04B5AC9E19235EEA00E9488E /* TempViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B5AC9D19235EEA00E9488E /* TempViewController.m */; };
+		04B6EB4D18F0247F006909FF /* WebServiceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6EB4C18F0247F006909FF /* WebServiceHelper.m */; };
+		04B6EB5018F025F4006909FF /* RequestCategoryList.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6EB4F18F025F4006909FF /* RequestCategoryList.m */; };
+		04B6EB7D18F02E32006909FF /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6EB7C18F02E32006909FF /* GDataXMLNode.m */; };
+		04B6EB7F18F02EFC006909FF /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04B6EB7E18F02EFC006909FF /* libxml2.dylib */; };
+		04B76451191F70410070199F /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B7644F191F70410070199F /* Main_iPad.storyboard */; };
+		04B76455191F889C0070199F /* UINavigationController+AutoRotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B76454191F889C0070199F /* UINavigationController+AutoRotate.m */; };
+		04B84EC51919F0EC00E11078 /* placeholder_l.png in Resources */ = {isa = PBXBuildFile; fileRef = 04B84EC11919F0EC00E11078 /* placeholder_l.png */; };
+		04B84EC61919F0EC00E11078 /* placeholder_l@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04B84EC21919F0EC00E11078 /* placeholder_l@2x.png */; };
+		04B84EC71919F0EC00E11078 /* placeholder_s.png in Resources */ = {isa = PBXBuildFile; fileRef = 04B84EC31919F0EC00E11078 /* placeholder_s.png */; };
+		04B84EC81919F0EC00E11078 /* placeholder_s@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04B84EC41919F0EC00E11078 /* placeholder_s@2x.png */; };
+		04BED4FF18FBE162001B3078 /* Dislike.png in Resources */ = {isa = PBXBuildFile; fileRef = 04BED4FD18FBE162001B3078 /* Dislike.png */; };
+		04BED50018FBE162001B3078 /* Like.png in Resources */ = {isa = PBXBuildFile; fileRef = 04BED4FE18FBE162001B3078 /* Like.png */; };
+		04CDC26F18FCEAEC00FC4511 /* Logo-TEDvn-29.png in Resources */ = {isa = PBXBuildFile; fileRef = 04CDC26918FCEAEC00FC4511 /* Logo-TEDvn-29.png */; };
+		04CDC27018FCEAEC00FC4511 /* Logo-TEDvn-29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04CDC26A18FCEAEC00FC4511 /* Logo-TEDvn-29@2x.png */; };
+		04CDC27118FCEAEC00FC4511 /* Logo-TEDvn-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04CDC26B18FCEAEC00FC4511 /* Logo-TEDvn-40@2x.png */; };
+		04CDC27218FCEAEC00FC4511 /* Logo-TEDvn-57.png in Resources */ = {isa = PBXBuildFile; fileRef = 04CDC26C18FCEAEC00FC4511 /* Logo-TEDvn-57.png */; };
+		04CDC27318FCEAEC00FC4511 /* Logo-TEDvn-57@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04CDC26D18FCEAEC00FC4511 /* Logo-TEDvn-57@2x.png */; };
+		04CDC27418FCEAEC00FC4511 /* Logo-TEDvn-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04CDC26E18FCEAEC00FC4511 /* Logo-TEDvn-60@2x.png */; };
+		04CDC27818FCF16E00FC4511 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 04CDC27518FCF16E00FC4511 /* iTunesArtwork */; };
+		04CDC27918FCF16E00FC4511 /* Logo-TEDvn-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 04CDC27618FCF16E00FC4511 /* Logo-TEDvn-76.png */; };
+		04CDC27A18FCF16E00FC4511 /* Logo-TEDvn-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04CDC27718FCF16E00FC4511 /* Logo-TEDvn-76@2x.png */; };
+		04CDC27C18FCF18000FC4511 /* Logo-TEDvn-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 04CDC27B18FCF18000FC4511 /* Logo-TEDvn-40.png */; };
+		04CDE6EF18F2C06700252671 /* Icon_menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 04CDE6EB18F2C06700252671 /* Icon_menu.png */; };
+		04CDE6F018F2C06700252671 /* Icon_menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04CDE6EC18F2C06700252671 /* Icon_menu@2x.png */; };
+		04CDE6F118F2C06700252671 /* VideoDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04CDE6EE18F2C06700252671 /* VideoDetailViewController.xib */; };
+		04CDF9C318ECEDE300EC9048 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CDF9C218ECEDE300EC9048 /* Foundation.framework */; };
+		04CDF9C518ECEDE300EC9048 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CDF9C418ECEDE300EC9048 /* CoreGraphics.framework */; };
+		04CDF9C718ECEDE300EC9048 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CDF9C618ECEDE300EC9048 /* UIKit.framework */; };
+		04CDF9CD18ECEDE300EC9048 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04CDF9CB18ECEDE300EC9048 /* InfoPlist.strings */; };
+		04CDF9CF18ECEDE300EC9048 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CDF9CE18ECEDE300EC9048 /* main.m */; };
+		04CDF9D318ECEDE300EC9048 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CDF9D218ECEDE300EC9048 /* AppDelegate.m */; };
+		04CDF9D618ECEDE300EC9048 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CDF9D418ECEDE300EC9048 /* Main_iPhone.storyboard */; };
+		04CDF9DC18ECEDE400EC9048 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CDF9DB18ECEDE400EC9048 /* ViewController.m */; };
+		04CDF9DE18ECEDE400EC9048 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04CDF9DD18ECEDE400EC9048 /* Images.xcassets */; };
+		04CDF9E518ECEDE400EC9048 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CDF9E418ECEDE400EC9048 /* XCTest.framework */; };
+		04CDF9E618ECEDE400EC9048 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CDF9C218ECEDE300EC9048 /* Foundation.framework */; };
+		04CDF9E718ECEDE400EC9048 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CDF9C618ECEDE300EC9048 /* UIKit.framework */; };
+		04CDF9EF18ECEDE400EC9048 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04CDF9ED18ECEDE400EC9048 /* InfoPlist.strings */; };
+		04CDF9F118ECEDE400EC9048 /* TEDvnTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CDF9F018ECEDE400EC9048 /* TEDvnTests.m */; };
+		04E0AED918F7FEB400FF8A84 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E0AED818F7FEB400FF8A84 /* SDWebImage.framework */; };
+		04E0AEDB18F7FEE200FF8A84 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E0AEDA18F7FEE200FF8A84 /* ImageIO.framework */; };
+		04F158D8191E16CF006D5866 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F158D6191E16CF006D5866 /* AboutViewController.m */; };
+		04F158DB191E1934006D5866 /* About_background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04F158DA191E1934006D5866 /* About_background.jpg */; };
+		04F158DD191E2339006D5866 /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F158DC191E2339006D5866 /* AboutViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04CDF9E818ECEDE400EC9048 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04CDF9B718ECEDE300EC9048 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04CDF9BE18ECEDE300EC9048;
+			remoteInfo = TEDvn;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		048F71E918F1332400AF2889 /* RequestPlaylistVideos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestPlaylistVideos.h; sourceTree = "<group>"; };
+		048F71EA18F1332400AF2889 /* RequestPlaylistVideos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestPlaylistVideos.m; sourceTree = "<group>"; };
+		048F71EC18F1491F00AF2889 /* VideoDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoDetailViewController.h; sourceTree = "<group>"; };
+		048F71ED18F1491F00AF2889 /* VideoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoDetailViewController.m; sourceTree = "<group>"; };
+		04B5AC9C19235EEA00E9488E /* TempViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TempViewController.h; sourceTree = "<group>"; };
+		04B5AC9D19235EEA00E9488E /* TempViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TempViewController.m; sourceTree = "<group>"; };
+		04B6EB4B18F0247F006909FF /* WebServiceHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServiceHelper.h; sourceTree = "<group>"; };
+		04B6EB4C18F0247F006909FF /* WebServiceHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServiceHelper.m; sourceTree = "<group>"; };
+		04B6EB4E18F025F4006909FF /* RequestCategoryList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestCategoryList.h; sourceTree = "<group>"; };
+		04B6EB4F18F025F4006909FF /* RequestCategoryList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestCategoryList.m; sourceTree = "<group>"; };
+		04B6EB7B18F02E32006909FF /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
+		04B6EB7C18F02E32006909FF /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
+		04B6EB7E18F02EFC006909FF /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		04B76450191F70410070199F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		04B76453191F889C0070199F /* UINavigationController+AutoRotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+AutoRotate.h"; path = "Categories/UINavigationController+AutoRotate.h"; sourceTree = "<group>"; };
+		04B76454191F889C0070199F /* UINavigationController+AutoRotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+AutoRotate.m"; path = "Categories/UINavigationController+AutoRotate.m"; sourceTree = "<group>"; };
+		04B84EC11919F0EC00E11078 /* placeholder_l.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder_l.png; sourceTree = "<group>"; };
+		04B84EC21919F0EC00E11078 /* placeholder_l@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder_l@2x.png"; sourceTree = "<group>"; };
+		04B84EC31919F0EC00E11078 /* placeholder_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder_s.png; sourceTree = "<group>"; };
+		04B84EC41919F0EC00E11078 /* placeholder_s@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder_s@2x.png"; sourceTree = "<group>"; };
+		04BED4FD18FBE162001B3078 /* Dislike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dislike.png; sourceTree = "<group>"; };
+		04BED4FE18FBE162001B3078 /* Like.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Like.png; sourceTree = "<group>"; };
+		04CDC26918FCEAEC00FC4511 /* Logo-TEDvn-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo-TEDvn-29.png"; sourceTree = "<group>"; };
+		04CDC26A18FCEAEC00FC4511 /* Logo-TEDvn-29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo-TEDvn-29@2x.png"; sourceTree = "<group>"; };
+		04CDC26B18FCEAEC00FC4511 /* Logo-TEDvn-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo-TEDvn-40@2x.png"; sourceTree = "<group>"; };
+		04CDC26C18FCEAEC00FC4511 /* Logo-TEDvn-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo-TEDvn-57.png"; sourceTree = "<group>"; };
+		04CDC26D18FCEAEC00FC4511 /* Logo-TEDvn-57@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo-TEDvn-57@2x.png"; sourceTree = "<group>"; };
+		04CDC26E18FCEAEC00FC4511 /* Logo-TEDvn-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo-TEDvn-60@2x.png"; sourceTree = "<group>"; };
+		04CDC27518FCF16E00FC4511 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
+		04CDC27618FCF16E00FC4511 /* Logo-TEDvn-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo-TEDvn-76.png"; sourceTree = "<group>"; };
+		04CDC27718FCF16E00FC4511 /* Logo-TEDvn-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo-TEDvn-76@2x.png"; sourceTree = "<group>"; };
+		04CDC27B18FCF18000FC4511 /* Logo-TEDvn-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo-TEDvn-40.png"; sourceTree = "<group>"; };
+		04CDC28018FD022500FC4511 /* iTunesArtwork@2x */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iTunesArtwork@2x"; sourceTree = "<group>"; };
+		04CDE6EB18F2C06700252671 /* Icon_menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon_menu.png; sourceTree = "<group>"; };
+		04CDE6EC18F2C06700252671 /* Icon_menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon_menu@2x.png"; sourceTree = "<group>"; };
+		04CDE6EE18F2C06700252671 /* VideoDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoDetailViewController.xib; sourceTree = "<group>"; };
+		04CDF9BF18ECEDE300EC9048 /* TEDvn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TEDvn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04CDF9C218ECEDE300EC9048 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		04CDF9C418ECEDE300EC9048 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		04CDF9C618ECEDE300EC9048 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		04CDF9CA18ECEDE300EC9048 /* TEDvn-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TEDvn-Info.plist"; sourceTree = "<group>"; };
+		04CDF9CC18ECEDE300EC9048 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		04CDF9CE18ECEDE300EC9048 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04CDF9D018ECEDE300EC9048 /* TEDvn-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TEDvn-Prefix.pch"; sourceTree = "<group>"; };
+		04CDF9D118ECEDE300EC9048 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		04CDF9D218ECEDE300EC9048 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		04CDF9D518ECEDE300EC9048 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		04CDF9DA18ECEDE400EC9048 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		04CDF9DB18ECEDE400EC9048 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		04CDF9DD18ECEDE400EC9048 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		04CDF9E318ECEDE400EC9048 /* TEDvnTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TEDvnTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04CDF9E418ECEDE400EC9048 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		04CDF9EC18ECEDE400EC9048 /* TEDvnTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TEDvnTests-Info.plist"; sourceTree = "<group>"; };
+		04CDF9EE18ECEDE400EC9048 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		04CDF9F018ECEDE400EC9048 /* TEDvnTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TEDvnTests.m; sourceTree = "<group>"; };
+		04E0AED818F7FEB400FF8A84 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = "<group>"; };
+		04E0AEDA18F7FEE200FF8A84 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		04F158D5191E16CF006D5866 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		04F158D6191E16CF006D5866 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		04F158DA191E1934006D5866 /* About_background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = About_background.jpg; sourceTree = "<group>"; };
+		04F158DC191E2339006D5866 /* AboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04CDF9BC18ECEDE300EC9048 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04E0AEDB18F7FEE200FF8A84 /* ImageIO.framework in Frameworks */,
+				04E0AED918F7FEB400FF8A84 /* SDWebImage.framework in Frameworks */,
+				04B6EB7F18F02EFC006909FF /* libxml2.dylib in Frameworks */,
+				04CDF9C518ECEDE300EC9048 /* CoreGraphics.framework in Frameworks */,
+				04CDF9C718ECEDE300EC9048 /* UIKit.framework in Frameworks */,
+				04CDF9C318ECEDE300EC9048 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04CDF9E018ECEDE400EC9048 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04CDF9E518ECEDE400EC9048 /* XCTest.framework in Frameworks */,
+				04CDF9E718ECEDE400EC9048 /* UIKit.framework in Frameworks */,
+				04CDF9E618ECEDE400EC9048 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04B6EB4A18F0247F006909FF /* TEDYoutubeAPIHelper */ = {
+			isa = PBXGroup;
+			children = (
+				04B6EB4B18F0247F006909FF /* WebServiceHelper.h */,
+				04B6EB4C18F0247F006909FF /* WebServiceHelper.m */,
+				04B6EB4E18F025F4006909FF /* RequestCategoryList.h */,
+				04B6EB4F18F025F4006909FF /* RequestCategoryList.m */,
+				048F71E918F1332400AF2889 /* RequestPlaylistVideos.h */,
+				048F71EA18F1332400AF2889 /* RequestPlaylistVideos.m */,
+			);
+			path = TEDYoutubeAPIHelper;
+			sourceTree = "<group>";
+		};
+		04B6EB7A18F02E32006909FF /* XMLSupport */ = {
+			isa = PBXGroup;
+			children = (
+				04B6EB7B18F02E32006909FF /* GDataXMLNode.h */,
+				04B6EB7C18F02E32006909FF /* GDataXMLNode.m */,
+			);
+			path = XMLSupport;
+			sourceTree = "<group>";
+		};
+		04B76452191F882D0070199F /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				04B76453191F889C0070199F /* UINavigationController+AutoRotate.h */,
+				04B76454191F889C0070199F /* UINavigationController+AutoRotate.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		04CDE6E918F2C06700252671 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				04CDE6EA18F2C06700252671 /* Images */,
+				04CDE6ED18F2C06700252671 /* Xibs */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		04CDE6EA18F2C06700252671 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				04F158DA191E1934006D5866 /* About_background.jpg */,
+				04BED4FD18FBE162001B3078 /* Dislike.png */,
+				04BED4FE18FBE162001B3078 /* Like.png */,
+				04CDE6EB18F2C06700252671 /* Icon_menu.png */,
+				04CDE6EC18F2C06700252671 /* Icon_menu@2x.png */,
+				04B84EC11919F0EC00E11078 /* placeholder_l.png */,
+				04B84EC21919F0EC00E11078 /* placeholder_l@2x.png */,
+				04B84EC31919F0EC00E11078 /* placeholder_s.png */,
+				04B84EC41919F0EC00E11078 /* placeholder_s@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		04CDE6ED18F2C06700252671 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				04F158DC191E2339006D5866 /* AboutViewController.xib */,
+				04CDE6EE18F2C06700252671 /* VideoDetailViewController.xib */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
+		04CDF9B618ECEDE300EC9048 = {
+			isa = PBXGroup;
+			children = (
+				04CDF9C818ECEDE300EC9048 /* TEDvn */,
+				04CDF9EA18ECEDE400EC9048 /* TEDvnTests */,
+				04CDF9C118ECEDE300EC9048 /* Frameworks */,
+				04CDF9C018ECEDE300EC9048 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04CDF9C018ECEDE300EC9048 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04CDF9BF18ECEDE300EC9048 /* TEDvn.app */,
+				04CDF9E318ECEDE400EC9048 /* TEDvnTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04CDF9C118ECEDE300EC9048 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04E0AEDA18F7FEE200FF8A84 /* ImageIO.framework */,
+				04B6EB7E18F02EFC006909FF /* libxml2.dylib */,
+				04CDF9C218ECEDE300EC9048 /* Foundation.framework */,
+				04CDF9C418ECEDE300EC9048 /* CoreGraphics.framework */,
+				04CDF9C618ECEDE300EC9048 /* UIKit.framework */,
+				04CDF9E418ECEDE400EC9048 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		04CDF9C818ECEDE300EC9048 /* TEDvn */ = {
+			isa = PBXGroup;
+			children = (
+				04B76452191F882D0070199F /* Categories */,
+				04E0AED818F7FEB400FF8A84 /* SDWebImage.framework */,
+				04CDE6E918F2C06700252671 /* Resources */,
+				04B6EB7A18F02E32006909FF /* XMLSupport */,
+				04B6EB4A18F0247F006909FF /* TEDYoutubeAPIHelper */,
+				04CDF9D118ECEDE300EC9048 /* AppDelegate.h */,
+				04CDF9D218ECEDE300EC9048 /* AppDelegate.m */,
+				04CDF9D418ECEDE300EC9048 /* Main_iPhone.storyboard */,
+				04B7644F191F70410070199F /* Main_iPad.storyboard */,
+				04CDF9DA18ECEDE400EC9048 /* ViewController.h */,
+				04CDF9DB18ECEDE400EC9048 /* ViewController.m */,
+				048F71EC18F1491F00AF2889 /* VideoDetailViewController.h */,
+				048F71ED18F1491F00AF2889 /* VideoDetailViewController.m */,
+				04CDF9DD18ECEDE400EC9048 /* Images.xcassets */,
+				04CDF9C918ECEDE300EC9048 /* Supporting Files */,
+				04F158D5191E16CF006D5866 /* AboutViewController.h */,
+				04F158D6191E16CF006D5866 /* AboutViewController.m */,
+				04B5AC9C19235EEA00E9488E /* TempViewController.h */,
+				04B5AC9D19235EEA00E9488E /* TempViewController.m */,
+			);
+			path = TEDvn;
+			sourceTree = "<group>";
+		};
+		04CDF9C918ECEDE300EC9048 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04CDC27518FCF16E00FC4511 /* iTunesArtwork */,
+				04CDC28018FD022500FC4511 /* iTunesArtwork@2x */,
+				04CDC27618FCF16E00FC4511 /* Logo-TEDvn-76.png */,
+				04CDC27718FCF16E00FC4511 /* Logo-TEDvn-76@2x.png */,
+				04CDC26918FCEAEC00FC4511 /* Logo-TEDvn-29.png */,
+				04CDC26A18FCEAEC00FC4511 /* Logo-TEDvn-29@2x.png */,
+				04CDC27B18FCF18000FC4511 /* Logo-TEDvn-40.png */,
+				04CDC26B18FCEAEC00FC4511 /* Logo-TEDvn-40@2x.png */,
+				04CDC26C18FCEAEC00FC4511 /* Logo-TEDvn-57.png */,
+				04CDC26D18FCEAEC00FC4511 /* Logo-TEDvn-57@2x.png */,
+				04CDC26E18FCEAEC00FC4511 /* Logo-TEDvn-60@2x.png */,
+				04CDF9CA18ECEDE300EC9048 /* TEDvn-Info.plist */,
+				04CDF9CB18ECEDE300EC9048 /* InfoPlist.strings */,
+				04CDF9CE18ECEDE300EC9048 /* main.m */,
+				04CDF9D018ECEDE300EC9048 /* TEDvn-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04CDF9EA18ECEDE400EC9048 /* TEDvnTests */ = {
+			isa = PBXGroup;
+			children = (
+				04CDF9F018ECEDE400EC9048 /* TEDvnTests.m */,
+				04CDF9EB18ECEDE400EC9048 /* Supporting Files */,
+			);
+			path = TEDvnTests;
+			sourceTree = "<group>";
+		};
+		04CDF9EB18ECEDE400EC9048 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04CDF9EC18ECEDE400EC9048 /* TEDvnTests-Info.plist */,
+				04CDF9ED18ECEDE400EC9048 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04CDF9BE18ECEDE300EC9048 /* TEDvn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04CDF9F418ECEDE400EC9048 /* Build configuration list for PBXNativeTarget "TEDvn" */;
+			buildPhases = (
+				04CDF9BB18ECEDE300EC9048 /* Sources */,
+				04CDF9BC18ECEDE300EC9048 /* Frameworks */,
+				04CDF9BD18ECEDE300EC9048 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TEDvn;
+			productName = TEDvn;
+			productReference = 04CDF9BF18ECEDE300EC9048 /* TEDvn.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04CDF9E218ECEDE400EC9048 /* TEDvnTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04CDF9F718ECEDE400EC9048 /* Build configuration list for PBXNativeTarget "TEDvnTests" */;
+			buildPhases = (
+				04CDF9DF18ECEDE400EC9048 /* Sources */,
+				04CDF9E018ECEDE400EC9048 /* Frameworks */,
+				04CDF9E118ECEDE400EC9048 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04CDF9E918ECEDE400EC9048 /* PBXTargetDependency */,
+			);
+			name = TEDvnTests;
+			productName = TEDvnTests;
+			productReference = 04CDF9E318ECEDE400EC9048 /* TEDvnTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04CDF9B718ECEDE300EC9048 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = samthui7;
+				TargetAttributes = {
+					04CDF9E218ECEDE400EC9048 = {
+						TestTargetID = 04CDF9BE18ECEDE300EC9048;
+					};
+				};
+			};
+			buildConfigurationList = 04CDF9BA18ECEDE300EC9048 /* Build configuration list for PBXProject "TEDvn" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04CDF9B618ECEDE300EC9048;
+			productRefGroup = 04CDF9C018ECEDE300EC9048 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04CDF9BE18ECEDE300EC9048 /* TEDvn */,
+				04CDF9E218ECEDE400EC9048 /* TEDvnTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04CDF9BD18ECEDE300EC9048 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04B76451191F70410070199F /* Main_iPad.storyboard in Resources */,
+				04CDC27C18FCF18000FC4511 /* Logo-TEDvn-40.png in Resources */,
+				04BED50018FBE162001B3078 /* Like.png in Resources */,
+				04CDC27118FCEAEC00FC4511 /* Logo-TEDvn-40@2x.png in Resources */,
+				04CDC26F18FCEAEC00FC4511 /* Logo-TEDvn-29.png in Resources */,
+				04CDC27318FCEAEC00FC4511 /* Logo-TEDvn-57@2x.png in Resources */,
+				04B84EC51919F0EC00E11078 /* placeholder_l.png in Resources */,
+				04CDE6EF18F2C06700252671 /* Icon_menu.png in Resources */,
+				04CDC27018FCEAEC00FC4511 /* Logo-TEDvn-29@2x.png in Resources */,
+				04CDC27918FCF16E00FC4511 /* Logo-TEDvn-76.png in Resources */,
+				04CDC27218FCEAEC00FC4511 /* Logo-TEDvn-57.png in Resources */,
+				04CDE6F018F2C06700252671 /* Icon_menu@2x.png in Resources */,
+				04BED4FF18FBE162001B3078 /* Dislike.png in Resources */,
+				04B84EC61919F0EC00E11078 /* placeholder_l@2x.png in Resources */,
+				04CDF9DE18ECEDE400EC9048 /* Images.xcassets in Resources */,
+				04CDC27A18FCF16E00FC4511 /* Logo-TEDvn-76@2x.png in Resources */,
+				04CDF9D618ECEDE300EC9048 /* Main_iPhone.storyboard in Resources */,
+				04B84EC81919F0EC00E11078 /* placeholder_s@2x.png in Resources */,
+				04B84EC71919F0EC00E11078 /* placeholder_s.png in Resources */,
+				04CDE6F118F2C06700252671 /* VideoDetailViewController.xib in Resources */,
+				04CDF9CD18ECEDE300EC9048 /* InfoPlist.strings in Resources */,
+				04CDC27418FCEAEC00FC4511 /* Logo-TEDvn-60@2x.png in Resources */,
+				04CDC27818FCF16E00FC4511 /* iTunesArtwork in Resources */,
+				04F158DB191E1934006D5866 /* About_background.jpg in Resources */,
+				04F158DD191E2339006D5866 /* AboutViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04CDF9E118ECEDE400EC9048 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04CDF9EF18ECEDE400EC9048 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04CDF9BB18ECEDE300EC9048 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F158D8191E16CF006D5866 /* AboutViewController.m in Sources */,
+				04B6EB4D18F0247F006909FF /* WebServiceHelper.m in Sources */,
+				04B6EB5018F025F4006909FF /* RequestCategoryList.m in Sources */,
+				048F71EB18F1332400AF2889 /* RequestPlaylistVideos.m in Sources */,
+				04CDF9DC18ECEDE400EC9048 /* ViewController.m in Sources */,
+				04B5AC9E19235EEA00E9488E /* TempViewController.m in Sources */,
+				04CDF9D318ECEDE300EC9048 /* AppDelegate.m in Sources */,
+				04CDF9CF18ECEDE300EC9048 /* main.m in Sources */,
+				04B6EB7D18F02E32006909FF /* GDataXMLNode.m in Sources */,
+				048F71EF18F1491F00AF2889 /* VideoDetailViewController.m in Sources */,
+				04B76455191F889C0070199F /* UINavigationController+AutoRotate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04CDF9DF18ECEDE400EC9048 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04CDF9F118ECEDE400EC9048 /* TEDvnTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04CDF9E918ECEDE400EC9048 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04CDF9BE18ECEDE300EC9048 /* TEDvn */;
+			targetProxy = 04CDF9E818ECEDE400EC9048 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04B7644F191F70410070199F /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04B76450191F70410070199F /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		04CDF9CB18ECEDE300EC9048 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04CDF9CC18ECEDE300EC9048 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		04CDF9D418ECEDE300EC9048 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04CDF9D518ECEDE300EC9048 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		04CDF9ED18ECEDE400EC9048 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04CDF9EE18ECEDE400EC9048 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04CDC27D18FCFB4500FC4511 /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = AppStore;
+		};
+		04CDC27E18FCFB4500FC4511 /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv7s,
+					armv7,
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TEDvn",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TEDvn/TEDvn-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode5.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
+				INFOPLIST_FILE = "TEDvn/TEDvn-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = (
+					"-lxml2",
+					"-ObjC",
+				);
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-lxml2",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "armv7 armv7s";
+				WRAPPER_EXTENSION = app;
+			};
+			name = AppStore;
+		};
+		04CDC27F18FCFB4500FC4511 /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TEDvn.app/TEDvn";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TEDvn/TEDvn-Prefix.pch";
+				INFOPLIST_FILE = "TEDvnTests/TEDvnTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = AppStore;
+		};
+		04CDF9F218ECEDE400EC9048 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04CDF9F318ECEDE400EC9048 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04CDF9F518ECEDE400EC9048 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv7s,
+					armv7,
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TEDvn",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TEDvn/TEDvn-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode5.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
+				INFOPLIST_FILE = "TEDvn/TEDvn-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = (
+					"-lxml2",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "armv7 armv7s";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		04CDF9F618ECEDE400EC9048 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv7s,
+					armv7,
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TEDvn",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TEDvn/TEDvn-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode5.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
+				INFOPLIST_FILE = "TEDvn/TEDvn-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = (
+					"-lxml2",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "armv7 armv7s";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		04CDF9F818ECEDE400EC9048 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TEDvn.app/TEDvn";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TEDvn/TEDvn-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TEDvnTests/TEDvnTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		04CDF9F918ECEDE400EC9048 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TEDvn.app/TEDvn";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TEDvn/TEDvn-Prefix.pch";
+				INFOPLIST_FILE = "TEDvnTests/TEDvnTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04CDF9BA18ECEDE300EC9048 /* Build configuration list for PBXProject "TEDvn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04CDF9F218ECEDE400EC9048 /* Debug */,
+				04CDF9F318ECEDE400EC9048 /* Release */,
+				04CDC27D18FCFB4500FC4511 /* AppStore */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04CDF9F418ECEDE400EC9048 /* Build configuration list for PBXNativeTarget "TEDvn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04CDF9F518ECEDE400EC9048 /* Debug */,
+				04CDF9F618ECEDE400EC9048 /* Release */,
+				04CDC27E18FCFB4500FC4511 /* AppStore */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04CDF9F718ECEDE400EC9048 /* Build configuration list for PBXNativeTarget "TEDvnTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04CDF9F818ECEDE400EC9048 /* Debug */,
+				04CDF9F918ECEDE400EC9048 /* Release */,
+				04CDC27F18FCFB4500FC4511 /* AppStore */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04CDF9B718ECEDE300EC9048 /* Project object */;
+}
